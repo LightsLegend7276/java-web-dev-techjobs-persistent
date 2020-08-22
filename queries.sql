@@ -6,5 +6,5 @@ AND TABLE_NAME IN ('job', 'skill', 'employer');
 ## Part 2: Test it with SQL
 Select e.name from employer e where upper(e.location) LIKE '%ST. LOUIS%';
 ## Part 3: Test it with SQL
-
+DROP TABLE job;
 ## Part 4: Test it with SQL
