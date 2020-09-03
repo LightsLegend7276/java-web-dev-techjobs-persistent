@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -16,6 +18,7 @@ public class Job extends AbstractEntity{
     @ManyToOne
     private Employer employer;
 
-    private String skills;
+    @ManyToMany
+    private List<Skill> skills = new ArrayList<>();
 
 }

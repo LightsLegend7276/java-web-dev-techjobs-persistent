@@ -8,3 +8,5 @@ Select e.name from employer e where upper(e.location) LIKE '%ST. LOUIS%';
 ## Part 3: Test it with SQL
 DROP TABLE job;
 ## Part 4: Test it with SQL
+Select name, description from skill
+where skill.id IN (Select Distinct skills_id from job_skills);
